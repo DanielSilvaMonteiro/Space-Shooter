@@ -170,6 +170,7 @@ function gameOver(){
         startButton.style.display ="block";
         instructionsText.style.display ="block";
        // maiorpontos = contador;
+       typeWrite(titulo);
         contador = 0;
         totalNaves = 0;
     });
