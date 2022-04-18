@@ -1,0 +1,123 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(img/ceu1.png);
+}
+
+.paragrafo{
+    color: greenyellow;
+    font-family: cursive;
+    font-size: 50px;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 0;
+    
+}
+
+.paragrafo::after{
+    /*content: '|';*/
+    content: url(img/fogo.png);
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    opacity:1;
+    -webkit-animation:  pisca.7s infinite;
+    animation: pisca .5s infinite;
+}
+
+@-webkit-keyframes pisca{
+    0%,100%{opacity:1;}
+    50%{opacity:0;}
+}
+@keyframes pisca{
+    0%,100%{opacity:1;}
+    50%{opacity:0;}
+}
+.paragrafo1{
+    color: greenyellow;
+    font-family: cursive;
+    font-size: 20px;
+    
+}
+
+footer {
+	width: 100%;
+    background-color: #1b0150;
+    opacity: 50%;
+	padding: 10px;
+	color: #e5e8e8;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+    right: 0%;
+}
+
+#main-play-area{
+    background-color: black;
+    background-image: url(img/space.png);
+    height: 600px;
+    width: 600px;
+}
+
+.game-instructions{
+    position: relative;
+    color: #e5e8e8;
+    left: 15%;
+    top: 0px;
+}
+
+.start-button{
+    position: relative;
+    color: #e5e8e8;
+    top: 4rem;
+    left: 15rem;
+    cursor: pointer;
+    -webkit-animation:  pisca.7s infinite;
+    animation: pisca .7s infinite;
+}
+
+.player-shooter{
+    position: relative;
+    height: 60px;
+    width: 70px;
+    top: 250px;
+   
+}
+
+
+span:hover{
+    color: greenyellow;
+}
+
+
+.laser {
+    position: relative;
+    width: 40px;
+    height: 50px;
+}
+
+.alien {
+    height: 60px;
+    width: 70px;
+    position: relative;
+}
+
+.alien-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-alien {
+    height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
+}
